@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title> Sangreo Forfolio </title> 
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body> 
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo1.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p> Vector Artist </p>
+            <h1> Hi! I'm <span>Paulo</span><br> Sangreo From Philippines</h1>
+        </div>
+        </div>
+    </div>
+ </div>
+
+ <!-- <------------about--------- -->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="https://i.pinimg.com/474x/5c/2b/34/5c2b34b0c0527c773a61b7deb08bae0c.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> About Me</h1>
+                <p>
+                    Hello! Through logo design and vector arts, I'm passionate about bringing creativity to life. 
+                    I create one-of-a-kind and unforgettable products with a sharp eye for detail and a talent for visual storytelling. 
+                    designs that leave a lasting effect. My graphic design abilities include the creation of eye-catching graphics. 
+                    Logos that say a lot about the brands and their tales. Music is my shelter outside of design. 
+                    When I'm not engrossed in graphics, you'll find me lost in piano songs. 
+                    In the future, I hope to broaden my horizons and pursue new chances abroad. 
+                    I'm on a quest to combine artistic skill with the universal language of music and design.
+                    Join me on this voyage where your imagination has no limits!
+
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('socials')">Socials</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Vector</span><br>Design, Customise Images</li>
+                        <li><span>Infinite Painter Application</span><br>Design/Develop Logo</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2023</span><br>Bachelor of Science in Information Technology / <br> Polytechnic University of the Philippines</li>
+                        <li><span>2019-2021</span><br>Science, Technology, Engineering, and Mathematics / <br> Our Lady Of Fatima University</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="socials">
+                    <ul>
+                        <li><span>FACEBOOK</span><br><a href="https://www.facebook.com/paupausps"> PAULO SANGREO </a></li>
+                        <li><span>INSTAGRAM</span><br><a href="https://www.instagram.com/paulo.sngr/"> PAULO.SNGR </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+
+
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://i.pinimg.com/474x/74/61/c1/7461c148a141631138af56f283fe0c7a.jpg">
+            </div>
+            <div class="work">
+                <img src="https://i.pinimg.com/736x/98/4e/b4/984eb4d4b0e8a90d7824efac4ecbc8f8.jpg">
+            </div>
+            <div class="work">
+                <img src="https://i.pinimg.com/474x/32/13/57/321357f26aa9fb011f58ed58981804fa.jpg">
+            </div>
+            <div class="work">
+                <img src="https://i.pinimg.com/474x/52/ca/d6/52cad65d45189ff962e656a13b744fa5.jpg">
+            </div>
+            <div class="work">
+                <img src="https://i.pinimg.com/474x/a9/92/87/a99287379ea9fe551ef5fcc9c2ded5bd.jpg">
+            </div>
+            <div class="work">
+                <img src="https://i.pinimg.com/474x/83/10/c3/8310c32f639082a92538053818c3969d.jpg">
+            </div>
+            <div class="work">
+                <img src="https://i.pinimg.com/474x/56/6f/45/566f45f0647648b799fc6f5a39e58f5a.jpg">
+            </div>
+            <div class="work">
+                <img src="https://i.pinimg.com/474x/71/b2/ea/71b2eae289f9a6b0d614374045ac9584.jpg">
+            </div>
+            <div class="work">
+                <img src="https://i.pinimg.com/474x/6d/83/6e/6d836e91723d26e08298e445b6de6e8e.jpg">
+            </div>
+            <div class="work">
+                <img src="https://i.pinimg.com/474x/32/13/57/321357f26aa9fb011f58ed58981804fa.jpg">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-links");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
